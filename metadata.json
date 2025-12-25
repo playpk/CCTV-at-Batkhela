@@ -1,0 +1,7 @@
+{
+  "name": "CCTV at Batkhela",
+  "description": "Professional CCTV security and surveillance services in Batkhela and Malakand region.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
