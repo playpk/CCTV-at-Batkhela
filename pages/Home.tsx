@@ -2,6 +2,7 @@
 import React from 'react';
 import { useTranslation } from '../App';
 import { Link } from 'react-router-dom';
+import Testimonials from '../components/Testimonials';
 
 const Home: React.FC = () => {
   const { t, lang } = useTranslation();
@@ -91,6 +92,36 @@ const Home: React.FC = () => {
               <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
               <div className="text-gray-600">Monitoring</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* Limited Time Offer Banner */}
+      <section className="bg-gradient-to-r from-orange-500 to-red-500 py-8">
+        <div className="container mx-auto px-6 text-center text-white">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <div className="flex items-center gap-2">
+              <span className="text-3xl">🔥</span>
+              <h3 className="text-2xl font-bold">
+                {lang === 'ur' ? 'محدود وقت کی پیشکش!' : 'Limited Time Offer!'}
+              </h3>
+            </div>
+            <p className="text-lg">
+              {lang === 'ur' 
+                ? 'مفت انسٹالیشن + 1 سال وارنٹی - صرف اس ماہ!' 
+                : 'Free Installation + 1 Year Warranty - This Month Only!'}
+            </p>
+            <a 
+              href="https://wa.me/923459270207?text=I want to avail the limited time offer" 
+              target="_blank" 
+              rel="noreferrer"
+              className="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all transform hover:scale-105"
+            >
+              {lang === 'ur' ? 'ابھی آرڈر کریں' : 'Order Now'}
+            </a>
           </div>
         </div>
       </section>

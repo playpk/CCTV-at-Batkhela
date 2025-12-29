@@ -7,6 +7,7 @@ import { translations } from './translations';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import WhatsAppWidget from './components/WhatsAppWidget';
 
 // Pages
 import Home from './pages/Home';
@@ -53,6 +54,7 @@ const App: React.FC = () => {
             </Routes>
           </main>
           <Footer />
+          <WhatsAppWidget />
         </div>
       </Router>
     </LanguageContext.Provider>
